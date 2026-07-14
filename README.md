@@ -1,21 +1,47 @@
-<<<<<<< HEAD
-# React + Vite
+# Sistem Antrean Kelurahan
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sistem Antrean Kelurahan adalah aplikasi berbasis web yang dirancang untuk mempermudah proses pengambilan dan pengelolaan antrean pelayanan di kantor kelurahan. Sistem ini menerapkan metode **First In First Out (FIFO)** dan memanfaatkan **QR Code** agar masyarakat dapat mengambil nomor antrean secara cepat dan praktis.
 
-Currently, two official plugins are available:
+## Fitur Utama
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Pengambilan nomor antrean melalui QR Code.
+- Pengambilan antrean melalui halaman web.
+- Manajemen layanan oleh petugas.
+- Dashboard monitoring antrean.
+- Pemanggilan antrean berdasarkan metode FIFO.
+- Statistik pelayanan.
 
-## React Compiler
+## Teknologi
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Frontend
+- React.js
+- Vite
+- CSS
 
-## Expanding the ESLint configuration
+### Backend
+- Node.js
+- Express.js
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# Sistem-Antrean-Kelurahan
-Sistem Antrean Kelurahan Menggunakan QR Code
->>>>>>> 4d4ef9f93ba4ba5153baf766015deb81cc412d5e
+### Database
+- SQLite
+
+## Cara Menjalankan
+
+### Frontend
+
+```bash
+npm install
+npm run dev
+```
+
+### Backend
+
+```bash
+cd server
+npm install
+npm start
+```
+
+## Lisensi
+
+Project ini dibuat sebagai bagian dari penelitian skripsi mengenai sistem antrean pelayanan berbasis web menggunakan metode FIFO dan QR Code pada lingkungan kelurahan.
