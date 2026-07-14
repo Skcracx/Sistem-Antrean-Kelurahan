@@ -1,0 +1,27 @@
+.queue-display {
+  text-align: center;
+  padding: 40px;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, var(--surface-variant) 0%, var(--surface-container) 100%);
+  border: 1px solid var(--outline-variant);
+}
+.queue-category {
+  font-size: 12px; font-weight: 600; letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-bottom: 12px;
+}
+.queue-number {
+  font-size: 72px; font-weight: 700; line-height: 1;
+  color: var(--primary-light);
+  text-shadow: 0 0 30px rgba(37, 99, 235, 0.25);
+  font-variant-numeric: tabular-nums;
+}
+.queue-sm .queue-number { font-size: 48px; }
+.queue-counter {
+  margin-top: 16px; font-size: 14px; font-weight: 500;
+  color: var(--on-surface-variant);
+  background: var(--surface-container-high);
+  display: inline-block; padding: 6px 16px;
+  border-radius: var(--radius);
+}

@@ -1,0 +1,17 @@
+.input-group { display: flex; flex-direction: column; gap: 8px; }
+.input-label { font-size: 14px; font-weight: 500; color: var(--on-surface); }
+.input-required { color: var(--error); margin-left: 2px; }
+.input-field {
+  background: var(--surface);
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--radius-md);
+  padding: 10px 14px;
+  color: var(--on-surface);
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  transition: border-color 0.2s ease;
+}
+.input-field::placeholder { color: var(--on-surface-variant); opacity: 0.7; }
+.input-field:focus { outline: none; border-color: var(--on-surface-variant); }
+.input-field.input-error { border-color: var(--error); }
+.input-error-text { font-size: 12px; color: var(--error); }

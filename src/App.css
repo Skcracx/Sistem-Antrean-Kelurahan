@@ -1,0 +1,28 @@
+.app-loading {
+  min-height: 100vh;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--background);
+}
+.loader {
+  width: 36px; height: 36px;
+  border: 3px solid var(--outline-variant);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.petugas-layout {
+  display: flex;
+  min-height: 100vh;
+}
+.petugas-content {
+  flex: 1;
+  margin-left: 260px;
+  background: var(--background);
+  min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .petugas-content { margin-left: 0; }
+}

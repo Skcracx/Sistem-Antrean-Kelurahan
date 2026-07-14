@@ -1,0 +1,84 @@
+.layanan-page { padding: 32px 24px; max-width: 1000px; margin: 0 auto; }
+.layanan-header {
+  display: flex; flex-direction: column; gap: 16px;
+  margin-bottom: 32px;
+}
+@media (min-width: 600px) {
+  .layanan-header { flex-direction: row; justify-content: space-between; align-items: flex-start; }
+}
+.layanan-header p { margin-top: 4px; max-width: 520px; }
+
+/* Kategori list */
+.kategori-list { display: flex; flex-direction: column; gap: 12px; }
+.kategori-row {
+  background: var(--surface-container);
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.kategori-main {
+  display: flex; flex-direction: column; gap: 16px;
+  padding: 20px; cursor: pointer;
+  transition: background 0.2s;
+}
+@media (min-width: 700px) {
+  .kategori-main { flex-direction: row; justify-content: space-between; align-items: center; gap: 0; }
+}
+.kategori-main:hover { background: var(--surface-container-high); }
+.kategori-left { display: flex; align-items: flex-start; gap: 16px; }
+.kategori-expand { font-size: 11px; color: var(--outline); width: 16px; margin-top: 4px; }
+.kategori-badge {
+  background: var(--surface-container-highest); color: var(--on-surface);
+  padding: 4px 12px; border-radius: var(--radius-full);
+  font-size: 12px; font-weight: 600; letter-spacing: 0.05em;
+  min-width: 36px; text-align: center;
+}
+.kategori-right { display: flex; align-items: center; justify-content: flex-end; gap: 8px; width: 100%; }
+@media (min-width: 700px) {
+  .kategori-right { width: auto; }
+}
+.row-inactive { opacity: 0.6; filter: grayscale(1); }
+
+/* Jenis panel */
+.jenis-panel {
+  padding: 24px;
+  border-top: 1px solid var(--outline-variant);
+  background: var(--surface);
+}
+@media (min-width: 700px) {
+  .jenis-panel { padding: 24px 24px 24px 64px; }
+}
+.jenis-header {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 16px;
+}
+.jenis-list { display: flex; flex-direction: column; gap: 8px; }
+.jenis-item {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 12px 16px;
+  background: var(--surface-container);
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--radius-md);
+  font-size: 14px;
+}
+.jenis-actions { display: flex; gap: 4px; }
+
+/* Status dots */
+.status-dot {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 13px; font-weight: 500;
+}
+.status-dot::before { content: ''; width: 8px; height: 8px; border-radius: 50%; }
+.status-dot.active::before { background: var(--success); }
+.status-dot.inactive::before { background: var(--outline); }
+.fw-600 { font-weight: 500; }
+.text-muted { color: var(--on-surface-variant); }
+
+/* Textarea */
+.textarea-field {
+  resize: vertical; min-height: 80px;
+  font-family: 'Inter', sans-serif; line-height: 1.5;
+}
+@media (max-width: 600px) {
+  .layanan-page { padding: 24px 16px; }
+}
